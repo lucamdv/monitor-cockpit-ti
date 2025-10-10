@@ -1,0 +1,86 @@
+/* Estilos para a página de detalhes usando variáveis de tema */
+
+.back-link {
+    display: inline-block;
+    /* Usando variável para a cor principal do texto/link */
+    color: var(--cor-azul-principal);
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    /* Usando variável para a cor de destaque */
+    color: var(--cor-vermelho-destaque);
+}
+
+#employeeNameTitle {
+    /* Usando variável para a cor principal do texto */
+    color: var(--cor-texto-principal);
+    margin-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    /* Usando variável para a cor do texto secundário */
+    color: var(--cor-texto-secundario);
+    margin-bottom: 30px;
+    transition: color 0.3s;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.option-card {
+    /* Usando variáveis para fundo, borda e sombra */
+    background-color: var(--cor-fundo-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: 12px;
+    padding: 25px;
+    text-decoration: none;
+    /* Usando variável para a cor principal do texto */
+    color: var(--cor-texto-principal);
+    box-shadow: 0 2px 4px var(--cor-sombra);
+    text-align: center;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, border-color 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Usando variável para a cor de destaque na borda */
+    border-color: var(--cor-vermelho-destaque);
+}
+
+.option-card h2 {
+    font-size: 1.5rem;
+    /* Usando variável, pode ser a mesma do título ou a principal */
+    color: var(--cor-texto-principal);
+    margin-bottom: 10px;
+}
+
+.option-card p {
+    font-size: 1rem;
+    /* Usando variável para a cor do texto secundário */
+    color: var(--cor-texto-secundario);
+}
+
+.option-icon {
+    width: 32px;
+    height: 32px;
+    /* Usando variável para a cor principal */
+    color: var(--cor-azul-principal);
+    margin-bottom: 15px;
+    stroke-width: 1.5;
+    transition: color 0.3s ease-out;
+}
+
+.option-card:hover .option-icon {
+    /* Usando variável para a cor de destaque */
+    color: var(--cor-vermelho-destaque);
+}
