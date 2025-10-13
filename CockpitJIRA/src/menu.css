@@ -1,0 +1,67 @@
+/* Estilos para a página de menu principal */
+
+.menu-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-title h1 {
+    font-size: 2.2rem;
+    color: var(--cor-texto-principal);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--cor-texto-secundario);
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 800px; /* Limita a largura para centralizar melhor as opções */
+    margin: 0 auto; /* Centraliza o grid */
+}
+
+.option-card {
+    background-color: var(--cor-fundo-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: 12px;
+    padding: 30px;
+    text-decoration: none;
+    color: var(--cor-texto-principal);
+    box-shadow: 0 2px 4px var(--cor-sombra);
+    text-align: center;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, border-color 0.3s ease-out;
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: var(--cor-vermelho-destaque);
+}
+
+.option-card h2 {
+    font-size: 1.6rem;
+    color: var(--cor-texto-principal);
+    margin-bottom: 10px;
+}
+
+.option-card p {
+    font-size: 1rem;
+    color: var(--cor-texto-secundario);
+}
+
+.option-icon {
+    width: 36px;
+    height: 36px;
+    color: var(--cor-azul-principal);
+    margin-bottom: 15px;
+    stroke-width: 1.5;
+    transition: color 0.3s ease-out;
+}
+
+.option-card:hover .option-icon {
+    color: var(--cor-vermelho-destaque);
+}

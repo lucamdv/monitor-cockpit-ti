@@ -194,7 +194,7 @@ body {
 }
 
 
-/* DEFINIÇÃO DAS VARIÁVEIS DE COR */
+/* DEFINIÇÃO DAS VARIÁVEIS DE COR (MODO ESCURO) */
 :root {
     --cor-header-azul: #002366;
     --cor-fundo: #f8f9fa;
@@ -341,7 +341,7 @@ body.dark-mode #moon-icon { display: none; }
     background-color: var(--cor-vermelho-hover);
 }
 
-/* Grade de Funcionários */
+/*Modo escuro para Grade de Funcionários */
 .employee-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -390,3 +390,4 @@ body.dark-mode #moon-icon { display: none; }
 .employee-card:hover .link-icon i {
     color: var(--cor-vermelho-destaque);
 }
+

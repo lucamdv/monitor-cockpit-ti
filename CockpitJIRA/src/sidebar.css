@@ -1,0 +1,114 @@
+/* Estilos para a Sidebar e seus componentes */
+.sidebar {
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: var(--cor-fundo-card);
+    border-right: 1px solid var(--cor-borda);
+    overflow-x: hidden;
+    /* Começa escondida fora da tela */
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease-in-out;
+    padding-top: 20px;
+}
+
+/* Classe que será adicionada via JS para mostrar a sidebar */
+.sidebar.open {
+    transform: translateX(0);
+    box-shadow: 5px 0px 15px rgba(0,0,0,0.1);
+}
+
+.sidebar-header {
+    padding: 0 20px 20px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.sidebar-header .logo {
+    max-width: 100px;
+}
+
+.sidebar-nav {
+    padding: 0 15px;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cor-texto-secundario);
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar-nav a:hover {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+}
+
+/* Estilo para o link da página ativa */
+.sidebar-nav a.active {
+    background-color: var(--cor-vermelho-destaque);
+    color: white;
+}
+
+.sidebar-nav a.active i {
+    color: white; /* Garante que o ícone também fique branco */
+}
+
+
+/* Botão Hambúrguer para abrir a sidebar */
+.hamburger-button {
+    background: none;
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.hamburger-button:hover {
+    background-color: var(--cor-fundo);
+}
+
+.hamburger-button i {
+    color: var(--cor-texto-secundario);
+    width: 20px;
+    height: 20px;
+}
+
+/* Overlay para escurecer o conteúdo quando a sidebar estiver aberta */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Fica abaixo da sidebar mas acima do conteúdo */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
