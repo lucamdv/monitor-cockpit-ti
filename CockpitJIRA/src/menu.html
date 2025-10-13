@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes do Funcionário</title>
+    <title>KarneKeijo - Menu Principal</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="detalhes.css">
+    <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="sidebar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<aside class="sidebar" id="sidebar">
+ <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <img src="../public/LogoKK.png" alt="Logo KarneKeijo" class="logo">
         </div>
@@ -30,23 +30,43 @@
             <button class="hamburger-button" id="hamburger-button">
                 <i data-lucide="menu"></i>
             </button>
-            <img src="../public/LogoKK.png" style="margin-bottom: 20px; margin-top: 20px;" alt="Logo KarneKeijo" class="logo">
+            <img src="../public/LogoKK.png" style=" margin-bottom: 20px; margin-top: 20px;" alt="Logo KarneKeijo" class="logo">
+            <button id="theme-toggle" class="theme-toggle-button">
+                <i data-lucide="moon" class="theme-icon" id="moon-icon"></i>
+                <i data-lucide="sun" class="theme-icon" id="sun-icon"></i>
+            </button>
         </div>
     </header>
 
     <main class="container">
-        <a href="jira-boards.html" class="back-link">&larr; Voltar para a lista</a>
-        <h1 id="employeeNameTitle">Carregando...</h1>
-        <p class="subtitle">Selecione o destino desejado:</p>
+        <div class="menu-title">
+            <h1>Menu Principal</h1>
+            <p class="subtitle">Bem vindo!</p>
+            <p class="subtitle">Selecione a ferramenta que deseja acessar:</p>
+        </div>
 
-        <div id="linkOptionsContainer" class="options-grid">
-            </div>
+        <div class="options-grid">
+            <a href="jira-boards.html" class="option-card">
+                <i data-lucide="layout-dashboard" class="option-icon"></i>
+                <h2>Quadros JIRA</h2>
+                <p>Visualizar as ações e filtros dos colaboradores no JIRA.</p>
+            </a>
+
+            <a href="#" class="option-card">
+                <i data-lucide="tags" class="option-icon"></i>
+                <h2>Chamados GLPI</h2>
+                <p>Acessar e gerenciar os chamados registrados no GLPI.</p>
+            </a>
+        </div>
     </main>
 
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="detalhes.js"></script>
     <script src="modo_noturno.js"></script>
     <script src="sidebar.js"></script>
+    <script>
+        // Ativa os ícones do Lucide
+        lucide.createIcons();
+    </script>
 
 </body>
 </html>
