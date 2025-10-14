@@ -1,5 +1,4 @@
-// get-jira-issues.js
-exports.handler = async function(event, context) {
+exports.handler = async function (event, context) {
   const { filterId } = event.queryStringParameters;
 
   if (!filterId) {
@@ -9,16 +8,12 @@ exports.handler = async function(event, context) {
     };
   }
 
-  const JIRA_DOMAIN = process.env.VITE_JIRA_DOMAIN;
-  const JIRA_USER_EMAIL = process.env.VITE_JIRA_USER_EMAIL;
-  const JIRA_API_TOKEN = process.env.VITE_JIRA_API_TOKEN;
+  const JIRA_DOMAIN = process.env.JIRA_DOMAIN;
+  const JIRA_USER_EMAIL = process.env.JIRA_USER_EMAIL;
+  const JIRA_API_TOKEN = process.env.JIRA_API_TOKEN;
 
-  // Novo endpoint correto
   const apiUrl = `https://${JIRA_DOMAIN}/rest/api/3/search/jql`;
-
-  const encodedCredentials = Buffer.from(
-    `${JIRA_USER_EMAIL}:${JIRA_API_TOKEN}`
-  ).toString('base64');
+  const encodedCredentials = Buffer.from(`${JIRA_USER_EMAIL}:${JIRA_API_TOKEN}`).toString('base64');
 
   try {
     const response = await fetch(apiUrl, {
@@ -29,33 +24,30 @@ exports.handler = async function(event, context) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        jql: `filter=${filterId}`,  // <-- Campo correto
-        fields: [
-          "summary",
-          "status",
-          "assignee",
-          "priority",
-          "issuetype"
-        ],
-        maxResults: 50
+        jql: `filter=${filterId}`,
+        fields: ['summary', 'status', 'assignee'],
+        maxResults: 50,
       }),
     });
 
-    if (!response.ok) {
-      const errorData = await response.text();
-      return { statusCode: response.status, body: errorData };
-    }
-
     const data = await response.json();
+
+    if (!response.ok) {
+      return {
+        statusCode: response.status,
+        body: JSON.stringify({ error: data }),
+      };
+    }
 
     return {
       statusCode: 200,
       body: JSON.stringify(data),
     };
   } catch (error) {
+    console.error('Erro ao buscar issues:', error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: error.message }),
+      body: JSON.stringify({ error: 'Erro interno ao buscar issues do Jira' }),
     };
   }
 };
