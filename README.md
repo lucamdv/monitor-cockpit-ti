@@ -1,5 +1,6 @@
 # Monitor-Cockpit-TI
 
 
-Para acessar os deploys: [https://app.netlify.com/projects/monitor-cockpit-ti-kk/overview](https://vercel.com/luca-monteiros-projects/monitor-cockpit-ti/uGnJskz4yarMrJdBBKvaarwP5Xfu)
+Para acessar os deploys: https://vercel.com/luca-monteiros-projects/monitor-cockpit-ti
 
+Para acessar o sistema: https://monitor-cockpit-ti.vercel.app/index.html
