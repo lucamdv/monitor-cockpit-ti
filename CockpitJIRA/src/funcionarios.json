@@ -2,201 +2,202 @@
   {
     "id": "arthur",
     "nome": "Arthur",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10891",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10893",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10894",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10892"
+    "filters": {
+      "ativos": "10891",
+      "impedidos": "10893",
+      "para_iniciar": "10894",
+      "concluidos": "10892"
     }
   },
   {
     "id": "clayton",
     "nome": "Clayton",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10895",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10896",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10897",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10898"
+    "filters": {
+      "ativos": "10895",
+      "impedidos": "10896",
+      "para_iniciar": "10897",
+      "concluidos": "10898"
     }
   },
   {
     "id": "everson",
     "nome": "Everson",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10899",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10901",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10902",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10900"
+    "filters": {
+      "ativos": "10899",
+      "impedidos": "10901",
+      "para_iniciar": "10902",
+      "concluidos": "10900"
     }
   },
   {
     "id": "leonardo",
     "nome": "Leonardo",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10903",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10905",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10906",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10904"
+    "filters": {
+      "ativos": "10903",
+      "impedidos": "10905",
+      "para_iniciar": "10906",
+      "concluidos": "10904"
     }
   },
   {
     "id": "fernando",
     "nome": "Fernando",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10907",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10909",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10910",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10908"
+    "filters": {
+      "ativos": "10907",
+      "impedidos": "10909",
+      "para_iniciar": "10910",
+      "concluidos": "10908"
     }
   },
   {
     "id": "data-priority",
     "nome": "Data Priority",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10911",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10913",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10914",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10912"
+    "filters": {
+      "ativos": "10911",
+      "impedidos": "10913",
+      "para_iniciar": "10914",
+      "concluidos": "10912"
     }
   },
   {
     "id": "rubens",
     "nome": "Rubens",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10915",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10917",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10918",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10916"
+    "filters": {
+      "ativos": "10915",
+      "impedidos": "10917",
+      "para_iniciar": "10918",
+      "concluidos": "10916"
     }
   },
   {
     "id": "thiago",
     "nome": "Thiago",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10919",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10921",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10922",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10920"
+    "filters": {
+      "ativos": "10919",
+      "impedidos": "10921",
+      "para_iniciar": "10922",
+      "concluidos": "10920"
     }
-  }, 
+  },
   {
     "id": "wellington",
     "nome": "Wellington",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10923",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10925",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10926",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10924"
+    "filters": {
+      "ativos": "10923",
+      "impedidos": "10925",
+      "para_iniciar": "10926",
+      "concluidos": "10924"
     }
   },
   {
     "id": "baruck",
     "nome": "Baruck",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10927",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10929",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10930",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10928"
+    "filters": {
+      "ativos": "10927",
+      "impedidos": "10929",
+      "para_iniciar": "10930",
+      "concluidos": "10928"
     }
   },
   {
     "id": "carlos-leal",
     "nome": "Carlos Leal",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10931",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10933",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10934",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10932"
+    "filters": {
+      "ativos": "10931",
+      "impedidos": "10933",
+      "para_iniciar": "10934",
+      "concluidos": "10932"
     }
   },
   {
     "id": "cast",
     "nome": "CAST",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10935",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10937",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10938",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10936"
+    "filters": {
+      "ativos": "10935",
+      "impedidos": "10937",
+      "para_iniciar": "10938",
+      "concluidos": "10936"
     }
   },
   {
     "id": "everaldo",
     "nome": "Everaldo",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10939",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10941",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10942",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10940"
+    "filters": {
+      "ativos": "10939",
+      "impedidos": "10941",
+      "para_iniciar": "10942",
+      "concluidos": "10940"
     }
   },
   {
     "id": "wayon-1-carlos",
     "nome": "Wayon 1 Carlos",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10943",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10945",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10946",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10944"
+    "filters": {
+      "ativos": "10943",
+      "impedidos": "10945",
+      "para_iniciar": "10946",
+      "concluidos": "10944"
     }
   },
   {
     "id": "yan",
     "nome": "Yan",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10948",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10947",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10949",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10924"
+    "filters": {
+      "ativos": "10948",
+      "impedidos": "10947",
+      "para_iniciar": "10949",
+      "concluidos": "10924"
     }
   },
   {
     "id": "make-value",
     "nome": "Make Value",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10982",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10984",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10985",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10983"
+    "filters": {
+      "ativos": "10982",
+      "impedidos": "10984",
+      "para_iniciar": "10985",
+      "concluidos": "10983"
     }
   },
   {
     "id": "renov-retail",
     "nome": "Renov Retail",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10986",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10988",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10989",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10987"
+    "filters": {
+      "ativos": "10986",
+      "impedidos": "10988",
+      "para_iniciar": "10989",
+      "concluidos": "10987"
     }
   },
   {
     "id": "tarcisio",
     "nome": "Tarcisio",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10990",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10992",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10993",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10991"
+    "filters": {
+      "ativos": "10990",
+      "impedidos": "10992",
+      "para_iniciar": "10993",
+      "concluidos": "10991"
     }
   },
   {
     "id": "wayon-2-leandro",
     "nome": "Wayon 2 Leandro",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10995",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10994",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10997",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10996"
+    "filters": {
+      "ativos": "10995",
+      "impedidos": "10994",
+      "para_iniciar": "10997",
+      "concluidos": "10996"
     }
   },
   {
     "id": "dba-simeon",
     "nome": "DBA Simeon",
-    "links": {
-      "ativos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=10998",
-      "impedidos": "https://kk-gestao-demandas.atlassian.net/issues/?filter=11000",
-      "para_iniciar": "https://kk-gestao-demandas.atlassian.net/issues/?filter=11001",
-      "concluidos":"https://kk-gestao-demandas.atlassian.net/issues/?filter=10999"
+    "filters": {
+      "ativos": "10998",
+      "impedidos": "11000",
+      "para_iniciar": "11001",
+      "concluidos": "10999"
     }
   }
 ]
+

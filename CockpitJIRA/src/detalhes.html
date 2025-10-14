@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Funcionário</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="detalhes.css">
+    <link rel="stylesheet" href="issues.css">
     <link rel="stylesheet" href="sidebar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
         </div>
         <nav class="sidebar-nav">
             <ul>
-                <li><a href="menu.html" class="active"><i data-lucide="home"></i> Menu Principal</a></li>
+                <li><a href="../index.html" class="active"><i data-lucide="home"></i> Menu Principal</a></li>
                 <li><a href="jira-boards.html"><i data-lucide="users"></i> Colaboradores JIRA</a></li>
                 <li><a href="#"><i data-lucide="tags"></i> Chamados GLPI</a></li>
             </ul>
@@ -35,12 +35,16 @@
     </header>
 
     <main class="container">
-        <a href="jira-boards.html" class="back-link">&larr; Voltar para a lista</a>
         <h1 id="employeeNameTitle">Carregando...</h1>
-        <p class="subtitle">Selecione o destino desejado:</p>
+        <p class="subtitle">Selecione um filtro para ver os chamados:</p>
 
-        <div id="linkOptionsContainer" class="options-grid">
-            </div>
+        <!-- Abas para os filtros (Ativos, Impedidos, etc.) -->
+        <div id="filter-tabs-container" class="filter-tabs"></div>
+
+        <!-- Container onde a lista de issues será renderizada -->
+        <div id="issues-container">
+            <!-- Um spinner ou mensagem de carregamento aparecerá aqui -->
+        </div>
     </main>
 
     <script src="https://unpkg.com/lucide@latest"></script>
