@@ -1,11 +1,8 @@
-exports.handler = async function (event, context) {
-  const { filterId } = event.queryStringParameters;
+export default async function handler(req, res) {
+  const { filterId } = req.query;
 
   if (!filterId) {
-    return {
-      statusCode: 400,
-      body: JSON.stringify({ error: 'Filter ID is required' }),
-    };
+    return res.status(400).json({ error: 'Filter ID is required' });
   }
 
   const JIRA_DOMAIN = process.env.JIRA_DOMAIN;
@@ -33,21 +30,12 @@ exports.handler = async function (event, context) {
     const data = await response.json();
 
     if (!response.ok) {
-      return {
-        statusCode: response.status,
-        body: JSON.stringify({ error: data }),
-      };
+      return res.status(response.status).json({ error: data });
     }
 
-    return {
-      statusCode: 200,
-      body: JSON.stringify(data),
-    };
+    return res.status(200).json(data);
   } catch (error) {
     console.error('Erro ao buscar issues:', error);
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: 'Erro interno ao buscar issues do Jira' }),
-    };
+    return res.status(500).json({ error: 'Erro interno ao buscar issues do Jira' });
   }
-};
+}
