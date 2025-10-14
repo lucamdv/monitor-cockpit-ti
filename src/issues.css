@@ -1,0 +1,112 @@
+/* Estilos para a lista de issues do Jira */
+.filter-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--cor-borda);
+    padding-bottom: 15px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: 1px solid var(--cor-borda);
+    background-color: transparent;
+    color: var(--cor-texto-secundario);
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.tab-button:hover {
+    background-color: var(--cor-fundo);
+    border-color: var(--cor-azul-principal);
+}
+
+.tab-button.active {
+    background-color: var(--cor-vermelho-destaque);
+    color: white;
+    border-color: var(--cor-vermelho-destaque);
+}
+
+#issues-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.issue-card {
+    background-color: var(--cor-fundo-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.issue-card:hover {
+    border-color: var(--cor-vermelho-destaque);
+    transform: translateY(-2px);
+}
+
+.issue-icon img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.issue-details {
+    flex-grow: 1;
+}
+
+.issue-details .summary {
+    color: var(--cor-texto-principal);
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.issue-details .key {
+    font-size: 0.85rem;
+    color: var(--cor-texto-secundario);
+}
+
+.issue-status {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* Cores de status (exemplo) */
+.status-done { background-color: #00ff3c; color: #005013; }
+.status-indeterminate { background-color: #eeff00; color: #696800; }
+.status-new { background-color: #ff0000; color: #800000; }
+
+.loading-spinner {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--cor-borda);
+    border-top-color: var(--cor-vermelho-destaque);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 50px auto;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #ff0019;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #f5c6cb;
+}

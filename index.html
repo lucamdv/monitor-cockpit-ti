@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KarneKeijo - Menu Principal</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/menu.css">
+    <link rel="stylesheet" href="src/sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="../public/LogoKK.png" alt="Logo KarneKeijo" class="logo">
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html" class="active"><i data-lucide="home"></i> Menu Principal</a></li>
+                <li><a href="src/jira-boards.html"><i data-lucide="users"></i> Colaboradores JIRA</a></li>
+                <li><a href="#"><i data-lucide="tags"></i> Chamados GLPI</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+    <header class="header">
+        <div class="header-content">
+            <button class="hamburger-button" id="hamburger-button">
+                <i data-lucide="menu"></i>
+            </button>
+            <img src="../public/LogoKK.png" style=" margin-bottom: 20px; margin-top: 20px;" alt="Logo KarneKeijo" class="logo">
+            <button id="theme-toggle" class="theme-toggle-button">
+                <i data-lucide="moon" class="theme-icon" id="moon-icon"></i>
+                <i data-lucide="sun" class="theme-icon" id="sun-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="menu-title">
+            <h1>Menu Principal</h1>
+            <p class="subtitle">Bem vindo!</p>
+            <p class="subtitle">Selecione a ferramenta que deseja acessar:</p>
+        </div>
+
+        <div class="options-grid">
+            <a href="src/jira-boards.html" class="option-card">
+                <i data-lucide="layout-dashboard" class="option-icon"></i>
+                <h2>Quadros JIRA</h2>
+                <p>Visualizar as ações e filtros dos colaboradores no JIRA.</p>
+            </a>
+
+            <a href="#" class="option-card">
+                <i data-lucide="tags" class="option-icon"></i>
+                <h2>Chamados GLPI</h2>
+                <p>Acessar e gerenciar os chamados registrados no GLPI.</p>
+            </a>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="src/modo_noturno.js"></script>
+    <script src="src/sidebar.js"></script>
+    <script>
+        // Ativa os ícones do Lucide
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

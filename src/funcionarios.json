@@ -1,0 +1,203 @@
+[
+  {
+    "id": "arthur",
+    "nome": "Arthur",
+    "filters": {
+      "ativos": "10891",
+      "impedidos": "10893",
+      "para_iniciar": "10894",
+      "concluidos": "10892"
+    }
+  },
+  {
+    "id": "clayton",
+    "nome": "Clayton",
+    "filters": {
+      "ativos": "10895",
+      "impedidos": "10896",
+      "para_iniciar": "10897",
+      "concluidos": "10898"
+    }
+  },
+  {
+    "id": "everson",
+    "nome": "Everson",
+    "filters": {
+      "ativos": "10899",
+      "impedidos": "10901",
+      "para_iniciar": "10902",
+      "concluidos": "10900"
+    }
+  },
+  {
+    "id": "leonardo",
+    "nome": "Leonardo",
+    "filters": {
+      "ativos": "10903",
+      "impedidos": "10905",
+      "para_iniciar": "10906",
+      "concluidos": "10904"
+    }
+  },
+  {
+    "id": "fernando",
+    "nome": "Fernando",
+    "filters": {
+      "ativos": "10907",
+      "impedidos": "10909",
+      "para_iniciar": "10910",
+      "concluidos": "10908"
+    }
+  },
+  {
+    "id": "data-priority",
+    "nome": "Data Priority",
+    "filters": {
+      "ativos": "10911",
+      "impedidos": "10913",
+      "para_iniciar": "10914",
+      "concluidos": "10912"
+    }
+  },
+  {
+    "id": "rubens",
+    "nome": "Rubens",
+    "filters": {
+      "ativos": "10915",
+      "impedidos": "10917",
+      "para_iniciar": "10918",
+      "concluidos": "10916"
+    }
+  },
+  {
+    "id": "thiago",
+    "nome": "Thiago",
+    "filters": {
+      "ativos": "10919",
+      "impedidos": "10921",
+      "para_iniciar": "10922",
+      "concluidos": "10920"
+    }
+  },
+  {
+    "id": "wellington",
+    "nome": "Wellington",
+    "filters": {
+      "ativos": "10923",
+      "impedidos": "10925",
+      "para_iniciar": "10926",
+      "concluidos": "10924"
+    }
+  },
+  {
+    "id": "baruck",
+    "nome": "Baruck",
+    "filters": {
+      "ativos": "10927",
+      "impedidos": "10929",
+      "para_iniciar": "10930",
+      "concluidos": "10928"
+    }
+  },
+  {
+    "id": "carlos-leal",
+    "nome": "Carlos Leal",
+    "filters": {
+      "ativos": "10931",
+      "impedidos": "10933",
+      "para_iniciar": "10934",
+      "concluidos": "10932"
+    }
+  },
+  {
+    "id": "cast",
+    "nome": "CAST",
+    "filters": {
+      "ativos": "10935",
+      "impedidos": "10937",
+      "para_iniciar": "10938",
+      "concluidos": "10936"
+    }
+  },
+  {
+    "id": "everaldo",
+    "nome": "Everaldo",
+    "filters": {
+      "ativos": "10939",
+      "impedidos": "10941",
+      "para_iniciar": "10942",
+      "concluidos": "10940"
+    }
+  },
+  {
+    "id": "wayon-1-carlos",
+    "nome": "Wayon 1 Carlos",
+    "filters": {
+      "ativos": "10943",
+      "impedidos": "10945",
+      "para_iniciar": "10946",
+      "concluidos": "10944"
+    }
+  },
+  {
+    "id": "yan",
+    "nome": "Yan",
+    "filters": {
+      "ativos": "10948",
+      "impedidos": "10947",
+      "para_iniciar": "10949",
+      "concluidos": "10924"
+    }
+  },
+  {
+    "id": "make-value",
+    "nome": "Make Value",
+    "filters": {
+      "ativos": "10982",
+      "impedidos": "10984",
+      "para_iniciar": "10985",
+      "concluidos": "10983"
+    }
+  },
+  {
+    "id": "renov-retail",
+    "nome": "Renov Retail",
+    "filters": {
+      "ativos": "10986",
+      "impedidos": "10988",
+      "para_iniciar": "10989",
+      "concluidos": "10987"
+    }
+  },
+  {
+    "id": "tarcisio",
+    "nome": "Tarcisio",
+    "filters": {
+      "ativos": "10990",
+      "impedidos": "10992",
+      "para_iniciar": "10993",
+      "concluidos": "10991"
+    }
+  },
+  {
+    "id": "wayon-2-leandro",
+    "nome": "Wayon 2 Leandro",
+    "filters": {
+      "ativos": "10995",
+      "impedidos": "10994",
+      "para_iniciar": "10997",
+      "concluidos": "10996"
+    }
+  },
+  {
+    "id": "dba-simeon",
+    "nome": "DBA Simeon",
+    "filters": {
+      "ativos": "10998",
+      "impedidos": "11000",
+      "para_iniciar": "11001",
+      "concluidos": "10999"
+    }
+  }
+]
+
