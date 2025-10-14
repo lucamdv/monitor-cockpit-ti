@@ -84,9 +84,9 @@
 }
 
 /* Cores de status (exemplo) */
-.status-done { background-color: #d4edda; color: #155724; }
-.status-in-progress { background-color: #cce5ff; color: #004085; }
-.status-to-do { background-color: #e2e3e5; color: #383d41; }
+.status-done { background-color: #00ff3c; color: #005013; }
+.status-indeterminate { background-color: #eeff00; color: #696800; }
+.status-new { background-color: #ff0000; color: #800000; }
 
 .loading-spinner {
     display: block;
@@ -105,7 +105,7 @@
 
 .error-message {
     background-color: #f8d7da;
-    color: #721c24;
+    color: #ff0019;
     padding: 15px;
     border-radius: 8px;
     border: 1px solid #f5c6cb;
