@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         showLoading();
         try {
             // Chama a nossa função serverless (o proxy)
-            const response = await fetch(`/.netlify/functions/get-jira-issues?filterId=${filterId}`);
+            const response = await fetch(`/api/get-jira-issues?filterId=${filterId}`);
 
             if (!response.ok) {
                 const errorText = await response.text();
