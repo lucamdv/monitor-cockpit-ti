@@ -1,6 +1,6 @@
 # Monitor-Cockpit-TI
 
 
-Para acessar os deploys: https://vercel.com/luca-monteiros-projects/monitor-cockpit-ti
+Para instalar as dependências do projeto: npm install
 
-Para acessar o sistema: https://monitor-cockpit-ti.vercel.app/index.html
+Para rodar o projeto: node server.js
