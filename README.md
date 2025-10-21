@@ -1,73 +1,187 @@
-# Welcome to your Lovable project
+# 🚀 Cockpit-TI — Painel Corporativo de Gestão de TI
 
-## Project info
+**Cockpit-TI** é uma aplicação web desenvolvida para centralizar informações operacionais e analíticas da área de TI, integrando dados de ferramentas como **JIRA** e **GLPI**, além de possibilitar visualização de indicadores, produtividade e status das equipes.
 
-**URL**: https://lovable.dev/projects/65773d2a-1709-45e8-a427-d9d32da127de
+Acesse já: http://172.16.0.10:83/cockpit-ti/
+---
 
-## How can I edit this code?
+## 📌 Índice
 
-There are several ways of editing your application.
+- [Visão Geral](#-visão-geral)
+- [Tecnologias](#-tecnologias)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Como Rodar Localmente](#-como-rodar-localmente)
+- [Build de Produção](#-build-de-produção)
+- [Deploy no Apache](#-deploy-no-apache)
+- [Configuração do Vite](#-configuração-do-vite)
+- [Contribuindo](#-contribuindo)
+- [Licença](#-licença)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/65773d2a-1709-45e8-a427-d9d32da127de) and start prompting.
+## 💡 Visão Geral
 
-Changes made via Lovable will be committed automatically to this repo.
+O **Cockpit-TI** foi criado para otimizar a operação da área de tecnologia, fornecendo uma visão integrada de desempenho, tarefas e indicadores técnicos.
 
-**Use your preferred IDE**
+- 📊 Dashboards com métricas e produtividade.
+- 🧩 Integrações com **JIRA** e **GLPI**.
+- 💬 Interface moderna, responsiva e padronizada.
+- ⚙️ Deploy simples via Apache, com build Vite otimizado.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🧠 Tecnologias
 
-Follow these steps:
+| Camada | Tecnologias |
+|---------|--------------|
+| **Frontend** | React 18 + TypeScript + Vite |
+| **UI/UX** | Tailwind CSS + shadcn/ui + Lucide Icons |
+| **State/Query** | React Query |
+| **Backend/Infra** | Supabase (integrações e autenticação) |
+| **Empacotamento** | Vite + SWC |
+| **Servidor Web** | Apache HTTP Server |
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📂 Estrutura do Projeto
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+📦 cockpit-ti
+├── 📁 public/                  # Arquivos públicos (favicon, robots, etc.)
+├── 📁 src/
+│   ├── 📁 components/          # Componentes reutilizáveis (UI e customizados)
+│   ├── 📁 data/                # Dados estáticos / mocks (funcionários, etc.)
+│   ├── 📁 hooks/               # Hooks customizados
+│   ├── 📁 integrations/        # Integrações (ex: Supabase)
+│   ├── 📁 lib/                 # Utilitários e helpers
+│   ├── 📁 pages/               # Páginas do sistema (Index, JiraBoards, etc.)
+│   ├── 📄 App.tsx              # Componente principal (Router e Providers)
+│   ├── 📄 main.tsx             # Ponto de entrada React
+│   └── 🎨 index.css / App.css  # Estilos globais
+├── 📁 supabase/                # Funções e configuração da integração
+├── ⚙️ vite.config.ts           # Configuração do build e servidor
+├── ⚙️ package.json             # Dependências e scripts
+├── 🧩 tsconfig.json            # Tipagem TypeScript
+└── 📝 README.md                # Este arquivo
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🧰 Como Rodar Localmente
 
-**Use GitHub Codespaces**
+> Pré-requisitos:
+> - Node.js ≥ 18
+> - npm ou bun
+> - Git
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/seuusuario/cockpit-ti.git
+   cd cockpit-ti
+   ```
 
-## What technologies are used for this project?
+2. **Instale as dependências**
+   ```bash
+   npm ci
+   ```
 
-This project is built with:
+3. **Rode o servidor de desenvolvimento**
+   ```bash
+   npm run dev
+   ```
+   Acesse: [http://localhost:8080](http://localhost:8080)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 🏗️ Build de Produção
 
-Simply open [Lovable](https://lovable.dev/projects/65773d2a-1709-45e8-a427-d9d32da127de) and click on Share -> Publish.
+Gere os arquivos otimizados para deploy:
 
-## Can I connect a custom domain to my Lovable project?
+```bash
+npm run build
+```
 
-Yes, you can!
+Os arquivos de saída ficam em:
+```
+dist/
+├── index.html
+└── assets/
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Para testar localmente:
+```bash
+npm i -g serve
+serve -s dist -l 5000
+```
+Acesse [http://localhost:5000](http://localhost:5000)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+## 🌐 Deploy no Apache
+
+1. **Copie o conteúdo de `dist/` para o diretório do Apache:**
+   ```
+   \\172.16.0.10\htdocs\cockpit-ti
+   ```
+
+2. **Garanta que `index.html` seja o gerado no build.**
+
+3. **Crie o arquivo `.htaccess` dentro da pasta `cockpit-ti`:**
+   ```apache
+   Options -MultiViews
+   RewriteEngine On
+   RewriteCond %{REQUEST_FILENAME} -f [OR]
+   RewriteCond %{REQUEST_FILENAME} -d
+   RewriteRule ^ - [L]
+   RewriteRule ^ /cockpit-ti/index.html [L]
+   ```
+
+4. **Limpe o cache do navegador (Ctrl + F5).**
+5. **Acesse:** [http://172.16.0.10/cockpit-ti/](http://172.16.0.10/cockpit-ti/)
+
+---
+
+## ⚙️ Configuração do Vite
+
+O arquivo `vite.config.ts` deve conter:
+
+```ts
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
+import path from "path";
+
+export default defineConfig(({ mode }) => ({
+  base: "/cockpit-ti/",
+  server: { host: "::", port: 8080 },
+  plugins: [react()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+}));
+```
+
+---
+
+## 🤝 Contribuindo
+
+1. Faça um **fork** do projeto.
+2. Crie uma **branch** para sua feature:
+   ```bash
+   git checkout -b feature/minha-feature
+   ```
+3. Faça o commit das suas alterações:
+   ```bash
+   git commit -m "feat: adiciona nova funcionalidade"
+   ```
+4. Envie para o seu fork:
+   ```bash
+   git push origin feature/minha-feature
+   ```
+5. Crie um **Pull Request** para o repositório principal.
+
+---
+
+
+> Desenvolvido por [Estagiários KK / Luca Monteiro e Carlos Leal] — *KarneKeijo 2025*
